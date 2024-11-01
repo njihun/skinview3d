@@ -343,6 +343,7 @@ export class SkinViewer {
 		this.renderer = new WebGLRenderer({
 			canvas: this.canvas,
 			preserveDrawingBuffer: options.preserveDrawingBuffer === true, // default: false
+			antialias: true
 		});
 
 		this.onDevicePixelRatioChange = () => {
